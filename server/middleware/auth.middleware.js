@@ -22,7 +22,7 @@ exports.protect = async (req, res, next) => {
     // Find user by ID from token
     const users = await query('SELECT id, name, email, role FROM users WHERE id = ?', [decoded.id]);
     if (users.length === 0) {
-      return res.status(401).json({ message: 'Not authorized, user not found' });
+      return res.status(401).json({ message: 'Not authorized, user is not found' });
     }
 
     // Add user to request
@@ -30,7 +30,7 @@ exports.protect = async (req, res, next) => {
     next();
   } catch (error) {
     console.error('Auth middleware error:', error);
-    res.status(401).json({ message: 'Not authorized, token failed' });
+    res.status(401).json({ message: 'your accound is not authorized, token failed' });
   }
 };
 
