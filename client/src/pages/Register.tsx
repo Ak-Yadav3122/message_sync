@@ -34,7 +34,7 @@ const Register = () => {
     e.preventDefault();
     
     if (formData.password !== formData.confirmPassword) {
-      toast.error("Passwords do not match");
+      toast.error("Please enter the correct password");
       return;
     }
     
@@ -47,7 +47,7 @@ const Register = () => {
         password: formData.password
       });
     } catch (error) {
-      console.error("Registration submission error:", error);
+      console.error("During Registration submission error:", error);
     }
   };
 
@@ -62,7 +62,7 @@ const Register = () => {
           <CardHeader>
             <CardTitle className="text-2xl text-center">Create an account</CardTitle>
             <CardDescription className="text-center">
-              Enter your details to create your MessageSync account
+              Enter details to create your MessageSync account
             </CardDescription>
           </CardHeader>
           <CardContent>
