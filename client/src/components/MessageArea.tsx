@@ -43,7 +43,7 @@ const MessageArea = ({ selectedUser, currentUser }: MessageAreaProps) => {
       refetchConversation();
     },
     onError: (error: any) => {
-      toast.error(error.response?.data?.message || "Failed to send message");
+      toast.error(error.response?.data?.message || "Failed to send the message");
     },
   });
 
