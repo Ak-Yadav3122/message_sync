@@ -140,7 +140,7 @@ const Dashboard = () => {
                         <CardHeader className="pb-2 flex flex-row justify-between items-center">
                           <div>
                             <CardTitle>Contacts</CardTitle>
-                            <CardDescription>Connect with friends</CardDescription>
+                            <CardDescription>Connect with your friends</CardDescription>
                           </div>
                           <div className="md:hidden">
                             <Button 
