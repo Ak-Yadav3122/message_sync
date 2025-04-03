@@ -63,7 +63,7 @@ const UserList = ({ onSelectUser, selectedUser }: UserListProps) => {
       refetchRequests();
     },
     onError: (error: any) => {
-      toast.error(error.response?.data?.message || "Failed to send friend request");
+      toast.error(error.response?.data?.message || "Failed to send your friend request");
     },
   });
 
@@ -87,7 +87,7 @@ const UserList = ({ onSelectUser, selectedUser }: UserListProps) => {
       setActiveTab("search");
       refetchSearch();
     } else {
-      toast.error("Please enter at least 3 characters to search");
+      toast.error("Please enter at least 3 characters to search you reqirement");
     }
   };
 
@@ -255,7 +255,7 @@ const UserList = ({ onSelectUser, selectedUser }: UserListProps) => {
             
             {sentRequests.length > 0 && (
               <div className="p-2 bg-slate-50 mt-2">
-                <h3 className="text-sm font-medium text-slate-500 px-2 py-1">Sent Requests</h3>
+                <h3 className="text-sm font-medium text-slate-500 px-2 py-1">Sent your Requests</h3>
                 <div className="divide-y">
                   {sentRequests.map((request: any) => (
                     <div key={request.id} className="p-3 flex items-center gap-3">
@@ -331,7 +331,7 @@ const UserList = ({ onSelectUser, selectedUser }: UserListProps) => {
                 ))
               ) : (
                 <div className="p-4 text-center text-muted-foreground">
-                  Search for users to connect with.
+                  Search for users to connect with you.
                 </div>
               )}
             </div>

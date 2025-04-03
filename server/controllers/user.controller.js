@@ -23,7 +23,7 @@ exports.getUserById = async (req, res) => {
     );
 
     if (users.length === 0) {
-      return res.status(404).json({ message: 'User not found' });
+      return res.status(404).json({ message: ' The user is not found' });
     }
 
     res.status(200).json({ user: users[0] });
@@ -55,7 +55,7 @@ exports.updateUser = async (req, res) => {
       [name, email, phone, req.params.id]
     );
 
-    res.status(200).json({ message: 'User updated successfully' });
+    res.status(200).json({ message: 'User details updated successfully' });
   } catch (error) {
     console.error('Update user error:', error);
     res.status(500).json({ message: 'Server error' });
