@@ -175,7 +175,7 @@ const Dashboard = () => {
                   <Card>
                     <CardHeader>
                       <CardTitle>My Profile</CardTitle>
-                      <CardDescription>View and manage your account information</CardDescription>
+                      <CardDescription>View and manage account information</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-4">
