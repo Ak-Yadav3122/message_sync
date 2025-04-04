@@ -207,7 +207,7 @@ const Dashboard = () => {
                                 <DialogHeader>
                                   <DialogTitle>Delete Account</DialogTitle>
                                   <DialogDescription>
-                                    Are you sure you want to delete your account? This action cannot be undone
+                                    Are you sure to delete your account? This action cannot be undone
                                     and all your data will be permanently deleted.
                                   </DialogDescription>
                                 </DialogHeader>
