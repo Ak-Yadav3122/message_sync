@@ -106,7 +106,7 @@ const Register = () => {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="role">Role</Label>
+                <Label htmlFor="role"> Your Role</Label>
                 <Select onValueChange={handleRoleChange} required>
                   <SelectTrigger>
                     <SelectValue placeholder="Select your role" />
