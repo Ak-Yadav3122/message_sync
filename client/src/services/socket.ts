@@ -15,7 +15,7 @@ class SocketService {
     this.socket = io(SOCKET_URL);
     
     this.socket.on('connect', () => {
-      console.log('Connected to socket server');
+      console.log('Connected to the socket server');
       this.socket?.emit('user_connected', userId);
     });
     
