@@ -57,7 +57,7 @@ const Sidebar = ({ user, activeTab, setActiveTab, onOpenSettings }: SidebarProps
           onClick={onOpenSettings}
         >
           <Settings className="h-5 w-5 flex-shrink-0" />
-          <span className="hidden md:inline">Setting</span>
+          <span className="hidden md:inline">Settings</span>
         </button>
       </div>
     </div>
