@@ -48,7 +48,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
           socketService.connect(userData.id);
         }
       } catch (error) {
-        console.error("Error loading user from the localStorage:", error);
+        console.error("Error during loading user from the localStorage:", error);
         localStorage.removeItem("token");
         localStorage.removeItem("user");
       } finally {
