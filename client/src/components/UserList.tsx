@@ -59,7 +59,7 @@ const UserList = ({ onSelectUser, selectedUser }: UserListProps) => {
   const sendFriendRequestMutation = useMutation({
     mutationFn: (receiverId: number) => friendAPI.sendFriendRequest(receiverId),
     onSuccess: () => {
-      toast.success("Friend request sent successfully");
+      toast.success("Friend request sent successfully...");
       refetchRequests();
     },
     onError: (error: any) => {
