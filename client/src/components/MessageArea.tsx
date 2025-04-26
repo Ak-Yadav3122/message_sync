@@ -60,7 +60,7 @@ const MessageArea = ({ selectedUser, currentUser }: MessageAreaProps) => {
       if (selectedUser && message.sender_id === selectedUser.id) {
         refetchConversation();
       } else {
-        toast(`New message from ${message.sender_name}`);
+        toast(`New message come from ${message.sender_name}`);
       }
     };
 
