@@ -89,7 +89,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     try {
       setIsLoading(true);
       await authAPI.register(userData);
-      toast.success("Registration successful! Please log in.");
+      toast.success("Registration successful!");
       navigate("/login");
     } catch (error: any) {
       console.error("Registration error:", error);
